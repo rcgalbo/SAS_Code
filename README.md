@@ -1,7 +1,5 @@
 # SAS_Code
-
 ===================================
-
 ##SAS scripts written for STAT 303 SAS Programming and Applied Statistics
 
 ####Mathematics Department
