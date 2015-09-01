@@ -1,12 +1,14 @@
 # SAS_Code
+
 ===================================
+
 ##SAS scripts written for STAT 303 SAS Programming and Applied Statistics
 
 ####Mathematics Department
 ####Loyola University - Fall 2014
-
 ===================================
-### Instructor: Dr. Michael Perry
+### Instructor: 
+Dr. Michael Perry
 
 ### Course Objectives:
 
