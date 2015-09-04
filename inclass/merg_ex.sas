@@ -18,11 +18,9 @@ Proc sort Data = wd.mice2;
 By Subject;
 run;
 
-Data mice_complete;
+Data wd.mice_complete;
 set wd.mice1 wd.mice2;
 by Subject;
 run;
 
-Proc print Data = mice_complete;
-run;
-
+dm dexport wd.mice_complete 'P:\STAT303\SAS_Code\inclass\DATA\mice_complete.csv' ;
