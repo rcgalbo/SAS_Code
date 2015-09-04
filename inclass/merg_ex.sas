@@ -19,8 +19,12 @@ By Subject;
 run;
 
 Data wd.mice_complete;
-set wd.mice1 wd.mice2;
+Set wd.mice1 wd.mice2;
 by Subject;
 run;
 
-dm dexport wd.mice_complete 'P:\STAT303\SAS_Code\inclass\DATA\mice_complete.csv' ;
+Proc export 
+Data = wd.mice_complete
+OUTFILE = "P:\STAT303\SAS_Code\inclass\DATA\mice_complete.csv"
+DBMS = CSV;
+run;
