@@ -12,15 +12,15 @@
 *Data step:  Data is over time period expressing subjects height and weight     *                                                                 * mice to complete a known maze pattern.                                         *
 *                                                                               *
 *  This step creates new variables and preform basic opperations on the data set*
-*******************************************************************************/
+*********************************************************************************/
 
 
 Data training;
-input SUBK 1-3 HEIGHT 4-5 WT_INT 6-8 WT_FINAL 9-11;
+input SUBJ 1-3 HEIGHT 4-5 WT_INIT 6-8 WT_FINAL 9-11;
 
-BMI_INT = WT_INT / (HEIGHT**2);
-BMI_FINAL = WT_FINAL / (HEIGHT**2);
-BMI_DIFF = BMI_FINAL - BMI_INT;
+BMI_INIT = (WT_INIT / 2.2) / ((HEIGHT * 0.0254)**2);
+BMI_FINAL = (WT_FINAL / 2.2) / ((HEIGHT * 0.0254)**2);
+BMI_DIFF = BMI_FINAL - BMI_INIT;
 
 Datalines;
 00768155150
@@ -29,6 +29,11 @@ Datalines;
 00170345298
 ;
 run;
+Proc Sort Data = training;
+BY SUBJ;
+run;
 
 Proc print Data = training;
+Title "Diet Data";
+Var SUBJ HEIGHT BMI_INIT BMI_FINAL BMI_DIFF;
 run;
