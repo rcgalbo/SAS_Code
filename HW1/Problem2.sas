@@ -38,5 +38,38 @@ run;
 
 *average years served per branch;
 Proc Means Data = hwd.service;
-Var BRANCH;
+Title 'Avg. Years Service (By Branch)';
+By BRANCH;
+Var YEARS;
+run;
+
+*served 10+ years;
+Proc Print Data = hwd.service;
+Title "Served 10+ years";
+Where YEARS >= 10;
+Var LAST FIRST SEX BRANCH;
+run;
+
+*served between 5-10 years;
+Proc Print Data = hwd.service;
+Title "Served between 5-10 years";
+Where YEARS < 10 & YEARS >= 5;
+Var LAST FIRST SEX BRANCH;
+run;
+
+*served less than 5 years;
+Proc Print Data = hwd.service;
+Title "Served Less Than 5 years";
+Where YEARS < 5;
+Var LAST FIRST SEX BRANCH;
+run;
+
+*marine data set;
+Data Marines;
+Set hwd.service;
+If  BRANCH = “Marines”;
+Run;
+
+Proc Print Data = Marines;
+Title 'Marines';
 run;
