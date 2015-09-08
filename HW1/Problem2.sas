@@ -8,7 +8,9 @@
 *  and do basic opperations such as printing and merging data               *
 ****************************************************************************;
 
-/*	Data step includes importing table 
+/*	Problem 2: service
+
+	Data step includes importing table 
 	Var: Last Name/First Name/Sex/Military Branch/Years of Service
 */
 
@@ -64,12 +66,12 @@ Where YEARS < 5;
 Var LAST FIRST SEX BRANCH;
 run;
 
-*marine data set;
-Data Marines;
+*marines data set;
+Data marines;
 Set hwd.service;
-If  BRANCH = “Marines”;
+If  BRANCH = 'Marines';
 Run;
 
-Proc Print Data = Marines;
+Proc Print Data = marines;
 Title 'Marines';
 run;
