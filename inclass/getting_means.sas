@@ -16,3 +16,20 @@ Proc Means data = parts;
 var Deviation;
 By machine;
 run;
+
+Proc Means Data = parts;
+Class machine;
+run;
+
+Proc Means mean std skew kurtosis data = parts;
+var Deviation;
+By machine;
+run;
+
+Proc Univariate normal data = parts;
+run;
+
+Proc Univariate data = parts;
+Title 'Basic Histogram';
+Histogram deviation / normal;
+run;
