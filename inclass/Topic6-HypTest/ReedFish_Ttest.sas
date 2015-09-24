@@ -1,0 +1,15 @@
+Data REEDFISH;
+Input temp oxygen @@;
+Datalines;
+25 49 25 34 25 24 25 32 25 52 25 14 
+25 28 25 18 25 28 25 47 25 60
+33 28 33 55 33 45 33 51 33 41 33 27 
+33 44 33 48 33 54 33 67 33 46 33 59
+;
+ODS GRAPHICS ON;
+Proc Ttest;
+Class  TEMP;
+Var OXYGEN;
+Run;
+ODS GRAPHICS OFF;
+
