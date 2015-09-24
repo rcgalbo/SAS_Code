@@ -1,7 +1,7 @@
 *import the weather sheetl;
 Proc Import Out = WEATHER datafile = "P:\STAT303\SAS_Code\HW2\DATA\Weather"
 DBMS = xls;
-GETNAMES;
+GETNAMES = yes;
 RUN;
 
 
