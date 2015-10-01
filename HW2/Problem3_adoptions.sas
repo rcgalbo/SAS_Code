@@ -38,7 +38,7 @@ transparency = 0.00 stat = Sum dataskin = None name = 'Bar';
 
 
 *making pie (charts);
-Proc Gchart data = COUNTRY_SUM;
+Proc Gchart data = ADOPTION;
 Title "Adoptions By Country";
-pie ADOPTIONS / group = COUNTRY;
+pie COUNTRY / sumvar = ADOPTIONs;
 run;
