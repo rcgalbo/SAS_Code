@@ -1,5 +1,7 @@
 Data DJI;
 Input Date DJ;
+DateSq = Date ** 2;
+DateCu = Date ** 3; 
 Datalines;
 1913 1886
 1923 1252
@@ -18,8 +20,12 @@ Datalines;
 2013 16123
 ;
 
+*create a quadratic model for the DJI;
 ODS GRAPHICS ON;
-Proc REG Data=DJI;
-model DJ = Date;
+Proc REG Data=DJI
+		plots=predictions(x=Date);
+model DJ = Date DateSq;
 run;
 ODS GRAPHICS OFF;
+
+
