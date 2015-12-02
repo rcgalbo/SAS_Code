@@ -1,0 +1,102 @@
+University                         SAT  ACT Rate  Enroll   GL          Type
+Auburn University                  1165 27  68    20,629   2           PL
+
+Butler University                  1165 28  73    4,667    3           PR
+
+Creighton University               1180 27  75    7,730    3           PR
+
+Davidson College                   1335 31  92    1,756    2           PR
+
+DePaul University                  1155 26  68    25,398   3           PR
+
+Duquesne University                1120 24  74    10,106   3           PR
+
+Fordham University                 1255 28  81    14,667   1           PR
+
+George Mason University            1150 26  66    33,917   1           PL
+
+George Washington University       1295 29  80    25,116   1           PR
+
+Georgetown University              1405 31  93    16,437   1           PR
+
+Indiana University                 1175 27  75    36,419   3           PL
+ 
+La Salle University                990  22  68    6,176    1           PR
+Louisiana State University         1135 26  67    25,572   2           PL
+
+Marquette University               1175 27  80    11,599   3           PR
+
+Michigan State University          1120 26  79    38,768   3           PL
+
+Mississippi State University       1110 24  58    16,536   2           PL
+
+Northwestern University            1470 32  93    8,368    3           PR
+
+Pennsylvania State University      1195 27  86    40,541   3           PL
+
+Providence College                 1155 26  87    4,585    1           PR
+
+Purdue University                  1200 27  70    29,255   3           PL
+
+Rutgers University                 1210     79    40,720   1           PL
+
+Saint Bonaventure University       1055 24  64    2,406    1           PR
+
+Saint Joseph's University          1110 24  79    7,900    1           PR
+Saint Louis University             1200 28  70    16,500   3           PR
+ 
+Seton Hall University              1120 24  67    9,745    1           PR
+
+St. John's University              1090 24  59    21,354   1           PR
+
+Texas A&M University               1180 26  80    47,093   2           PL
+
+The Ohio State University          1265 29  82    44,741   3           PL
+
+University of Alabama              1125 26  67    30,752   2           PL
+
+University of Arkansas             1125 26  60    21,836   2           PL
+
+University of Dayton               1126 26  78    10,920   3           PR
+
+University of Florida              1265 28  85    33,720   2           PL
+
+University of Georgia              1235 28  83    26,882   2           PL
+
+University of Illinois             1355 28  84    32,959   3           PL
+
+University of Iowa                 1230 26  70    22,354   3           PL
+
+University of Kentucky             1115 25  59    22,223   2           PL
+ 
+University of Maryland             1310     82    37,631   1           PL
+
+University of Massachusetts        1210 26  70    26,359   1           PL
+
+University of Michigan             1380 30  91    28,395   3           PL
+
+University of Minnesota            1300 28  73    34,812   3           PL
+
+University of Mississippi          1085 24  58    18,101   2           PL
+
+University of Missouri             1165 26  71    27,654   2           PL
+
+University of Rhode Island         1070 24  63    15,904   1           PL
+
+University of Richmond             1310 30  83    4,249    1           PR
+
+University of South Carolina       1195 26  72    24,180   2           PL
+
+University of Tennessee            1165 26  66    21,664   2           PL
+
+University of Wisconsin            1280 28  82    31,289   3           PL
+
+Vanderbilt University              1490 33  92    6,851    2           PR
+
+Villanova Universty                1305 30  88    10,482   1           PR
+
+Virginia Commonwealth University   1105 24  56    32,303   1           PL
+
+Xavier University                  1110 25  78    6,584    3           PR
+
+
