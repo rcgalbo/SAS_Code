@@ -8,12 +8,17 @@
 
 
 Data airline;
-infile "P:\STAT303\SAS_Code\TEST\DATA\airline.txt";
+infile "P:\STAT303\SAS_Code\TEST\DATA\airline.txt" dlm = ' ';
+LENGTH AIRLINE$ 20;
 
-do i = 1 to 24 by 2;
-input #1 MaleSatDelta i - i+1 #2 FemateSatDelta i - i+1 #3 MaleSatSW i - i+1
-	#4 FemaleSatSW i - i+1 #5 MaleSatAA i - i+1 #6 FemaleSatAA i - i+1 
-	#7MaleSatUA i - i+1 #8 FemaleSatUA i - i+1;
+DO AIRLINE="DELTA","SOUTHWEST","AMERICAN","UNITED";
+    DO GENDER= 1 TO 2;
+        DO SATISFACTION_i=1 TO 9;
+            INPUT SATISFACTION @@;
+            OUTPUT;
+        END;
+    END;
+END;
 
 end;
 stop;
